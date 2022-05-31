@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.99ce8f96.css",
+    "main.css": "/react-portfolio/static/css/main.036f78c2.css",
     "main.js": "/react-portfolio/static/js/main.fed2c475.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/gitpro-timer.gif": "/react-portfolio/static/media/gitpro-timer.aae9091a2322a798937c.gif",
@@ -12,12 +12,12 @@
     "static/media/Resume 2.0.pdf": "/react-portfolio/static/media/Resume 2.0.b4430b1c9481e4eb41c3.pdf",
     "static/media/handlebars.png": "/react-portfolio/static/media/handlebars.78bfed45c48a90d61af9.png",
     "index.html": "/react-portfolio/index.html",
-    "main.99ce8f96.css.map": "/react-portfolio/static/css/main.99ce8f96.css.map",
+    "main.036f78c2.css.map": "/react-portfolio/static/css/main.036f78c2.css.map",
     "main.fed2c475.js.map": "/react-portfolio/static/js/main.fed2c475.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99ce8f96.css",
+    "static/css/main.036f78c2.css",
     "static/js/main.fed2c475.js"
   ]
 }
