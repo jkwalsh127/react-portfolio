@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.9bfef745.css",
-    "main.js": "/react-portfolio/static/js/main.0c086dce.js",
+    "main.css": "/react-portfolio/static/css/main.8c6b9036.css",
+    "main.js": "/react-portfolio/static/js/main.2aa76fac.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/gitpro-timer.gif": "/react-portfolio/static/media/gitpro-timer.aae9091a2322a798937c.gif",
     "static/media/portrait.jpeg": "/react-portfolio/static/media/portrait.1a4ac259458f0455c6b8.jpeg",
@@ -12,12 +12,12 @@
     "static/media/Resume 2.0.pdf": "/react-portfolio/static/media/Resume 2.0.b4430b1c9481e4eb41c3.pdf",
     "static/media/handlebars.png": "/react-portfolio/static/media/handlebars.78bfed45c48a90d61af9.png",
     "index.html": "/react-portfolio/index.html",
-    "main.9bfef745.css.map": "/react-portfolio/static/css/main.9bfef745.css.map",
-    "main.0c086dce.js.map": "/react-portfolio/static/js/main.0c086dce.js.map",
+    "main.8c6b9036.css.map": "/react-portfolio/static/css/main.8c6b9036.css.map",
+    "main.2aa76fac.js.map": "/react-portfolio/static/js/main.2aa76fac.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bfef745.css",
-    "static/js/main.0c086dce.js"
+    "static/css/main.8c6b9036.css",
+    "static/js/main.2aa76fac.js"
   ]
 }
