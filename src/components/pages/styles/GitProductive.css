@@ -1,0 +1,42 @@
+.gitpro-head {
+    font-size: 150%;
+    color: #F4FFF8;
+    width: 100%;
+    height: 35px;
+    margin: 5px 0 0 0;
+    background-color: #000F08;
+    padding: 6px 0 0 0;
+}
+.gitpro-head:hover {
+    color: #BE996E;
+    transition: .3s;
+}
+.technologies-div-gitpro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 10px 0 0;
+}
+.gitpro-badge {
+    width: fit-content;
+    padding: 5px 5px;
+    opacity: .8;
+}
+.gitpro-badge-handlebars {
+    width: 120px;
+    padding: 5px 0;
+    opacity: .6;
+}
+.gitpro-img {
+    width: 100%;
+    max-height: 255px;
+    max-width: 600px;
+    object-fit: contain;
+    opacity: .5;
+    transition: .3s;
+    margin: 5px 0 0 0;
+}
+.gitpro-img:hover {
+    opacity: .8;
+}

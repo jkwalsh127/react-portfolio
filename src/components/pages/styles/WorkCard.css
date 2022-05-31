@@ -1,0 +1,64 @@
+.work-card-large {
+    width: 45%;
+    margin: 0 0 0 5%;
+    overflow: hidden;
+    height: fit-content;
+    text-align: center;
+    background-color: #000F08;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.65rem rgb(40, 40, 40));
+    padding: 5px;
+}
+.work-card {
+    width: 35%;
+    margin: 0 30px 20px 5%;
+    overflow: hidden;
+    height: fit-content;
+    text-align: center;
+    background-color: #000F08;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.65rem rgb(40, 40, 40));
+    padding: 5px;
+}
+.work-card-head {
+    border-bottom: 2px solid #8f8773;
+    padding: 0 0 5px 0;
+    margin: 0 0 5px 0;
+}
+.work-dates {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    margin: 0px;
+}
+.repo {
+    font-size: 120%;
+    color: #F4FFF8;
+    width: 100%;
+    height: fit-content;
+    padding: 0 0 5px 0;
+    border-bottom: 2px solid #8f8773;   
+    width: fit-content; 
+    margin: 10px auto 15px auto;
+}
+.repo:hover {
+    color: #BE996E;
+    transition: .3s;
+}
+.card-description {
+    padding: 15px 15px 0px 15px;;
+    color: #F4FFF8;
+    line-height: 130%;
+}
+.technologies-div {
+    display: flex;
+    align-items: center;
+}
+.technologies-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 30px;
+    width: fit-content;
+    justify-self: center;
+}
