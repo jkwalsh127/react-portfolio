@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/Contact.css';
+import './styles/ContactMediaQueries.css';
 import { validateEmail } from '../../utils/helpers';
 
 export default function Form() {
