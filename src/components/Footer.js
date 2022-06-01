@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css';
+import '../styles/FooterMediaQueries.css';
 import github from './images/GitHub-Mark-Light-32px.png';
 import linkedin from './images/linkedin.png';
 
