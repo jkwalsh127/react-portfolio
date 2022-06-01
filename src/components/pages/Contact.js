@@ -29,22 +29,43 @@ export default function Form() {
         }
     };
 
-    const handleBlur = () => {
+    const handleNameBlur = () => {
         if (!userName) {
             setErrorNameMessage('-- Please include your name --');
         } else if (userName) {
             setErrorNameMessage('');
         }
+        if (message) {
+            setErrorMessageMessage('');
+        }       
+        if (email) {
+            setErrorEmailMessage('');
+        }
+    }
+    const handleEmailBlur = () => {
         if (!email || !validateEmail(email)) {
             setErrorEmailMessage('-- Please enter a valid email --');
         } else if (email) {
             setErrorEmailMessage('');
         }
-        if (!message) {
-            setErrorMessageMessage('-- Please include a message --');
-        }
         if (message) {
             setErrorMessageMessage('');
+        }
+        if (userName) {
+            setErrorNameMessage('');
+        }
+    }
+    const handleMessageBlur = () => {
+        if (!message) {
+            setErrorMessageMessage('-- Please include a message --');
+        } else if (message) {
+            setErrorMessageMessage('');
+        }
+        if (userName) {
+            setErrorNameMessage('');
+        }
+        if (email) {
+            setErrorEmailMessage('');
         }
     }
 
@@ -93,7 +114,7 @@ export default function Form() {
                         value={userName}
                         name='userName'
                         onChange={handleInputChange}
-                        onBlur={handleBlur}
+                        onBlur={handleNameBlur}
                         type='text'
                         placeholder='Your Name'
                     />
@@ -110,7 +131,7 @@ export default function Form() {
                         value={email}
                         name='email'
                         onChange={handleInputChange}
-                        onBlur={handleBlur}
+                        onBlur={handleEmailBlur}
                         type='email'
                         placeholder='Your Email'
                     />
@@ -133,7 +154,7 @@ export default function Form() {
                     value={message}
                     name='message'
                     onChange={handleInputChange}
-                    onBlur={handleBlur}
+                    onBlur={handleMessageBlur}
                     type='text'
                 />
                 <button className='submit-btn' type='button' onClick={handleFormSubmit}>Submit</button>
