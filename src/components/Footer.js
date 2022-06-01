@@ -3,7 +3,7 @@ import '../styles/Footer.css';
 import github from './images/GitHub-Mark-Light-32px.png';
 import linkedin from './images/linkedin.png';
 
-function Nav() {
+export default function Footer() {
     return (
         <div className='contact-me'>
             <h3 className='contact-me-header'>Contact Me</h3>
@@ -34,5 +34,3 @@ function Nav() {
       </div>
     )
 }
-
-export default Nav;

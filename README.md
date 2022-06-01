@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# My Portfolio
+## Made using ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit my deployed site by clicking <a href="https://hidden-eyrie-12248.herokuapp.com/" target="_blank">**here**<a> 
 
-## Available Scripts
+## Table of contents
+* [Description](#description)
+* [Usage](#usage)
+* [Technologies](#technologies)
+* [Credits](#credits)
+* [Questions](#questions)
+* [License](#license)
 
-In the project directory, you can run:
+---
+## Description
+This project was meant to encorporate several technologies that I recently learned. As A progressive web app, a visitor is able to install this text editor on their machine. By doing so, the editor can be used and the content can be saved even when not connected to the internet. This is accomplished using a suite of npm packages. IDBdatabase is used to store data on the browser, webpack is used to minify assets to lower load times, the manifest plugin is used to provide instructions necessary to install the app locally, workbox is used to build out the service worker that can fulfill requests without network connectivity, and the babel CLI is used in the build process to compile ES6 code to older versions. The expressJS framework is also used to serve the routes. In the end, we have a simple text-editor application whose dynamic functionality provides legitimate utility.
 
-### `npm start`
+---
+### Usage
+A user can either navigate to the deployed heroku app (link above) or download this repository and initiate the app locally. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If downloading the repository, do the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+From the root directory, run the command 'npm run start'. This will startup the backend, initiate the build, and serve the client. 
 
-### `npm test`
+Now, whether visiting the heroku app or running it locally, the text editor can be used naturally in the browser. Enter some text, and upon page reload or navigating away from the page the content will be saved and made available when the user returns to the page. To install, click the install button. You will be prompted to confirm the install. Once installed, you can run the app straight from your machine, and the service worker strategy will serve from the cache or network, as well as update the cache, as necessary. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![app-demo](https://user-images.githubusercontent.com/101354032/170621619-839f7514-d2dd-4415-80b7-5437a15c4293.gif)
 
-### `npm run build`
+---
+### Technologies
+|   Languages  | Node Modules  |  Node Modules | Runtime Environment |
+| ----------- | ----------- | ----------- |  ----------- | 
+| ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) | @babel | ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) | ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)  |
+| ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) | babel loader  | mongoose  |   |
+| ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  | css loader |  html webpack |    |
+|   |  webpack  | workbox  |   |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+#### Credits
+This was a solo project with started code provided by the staff at the UC Berkeley full-stack coding bootcamp.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
+##### Questions
+Click <a href="https://github.com/jkwalsh127" target="_blank">**here**<a> to go to my GitHub profile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you have any questions about this project or would just like to get in touch, you can email me at <a href="mailto:jkwalsh127@gmail.com" target="_blank">jkwalsh127@gmail.com</a>
+  
+---
+###### License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The contents of this repository are protected under the <a href="https://opensource.org/licenses/MIT">MIT license.</a>
