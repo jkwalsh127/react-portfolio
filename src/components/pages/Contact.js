@@ -29,34 +29,22 @@ export default function Form() {
         }
     };
 
-    const handleNameBlur = () => {
+    const handleBlur = () => {
         if (!userName) {
             setErrorNameMessage('-- Please include your name --');
-            return;
-        }
-        if (userName) {
+        } else if (userName) {
             setErrorNameMessage('');
-            return;
         }
-    }
-    const handleEmailBlur = () => {
         if (!email || !validateEmail(email)) {
             setErrorEmailMessage('-- Please enter a valid email --');
-            return;
-        }
-        if (email) {
+        } else if (email) {
             setErrorEmailMessage('');
-            return;
         }
-    }
-    const handleMessageBlur = () => {
         if (!message) {
             setErrorMessageMessage('-- Please include a message --');
-            return;
         }
         if (message) {
             setErrorMessageMessage('');
-            return;
         }
     }
 
@@ -105,7 +93,7 @@ export default function Form() {
                         value={userName}
                         name='userName'
                         onChange={handleInputChange}
-                        onBlur={handleNameBlur}
+                        onBlur={handleBlur}
                         type='text'
                         placeholder='Your Name'
                     />
@@ -122,7 +110,7 @@ export default function Form() {
                         value={email}
                         name='email'
                         onChange={handleInputChange}
-                        onBlur={handleEmailBlur}
+                        onBlur={handleBlur}
                         type='email'
                         placeholder='Your Email'
                     />
@@ -145,7 +133,7 @@ export default function Form() {
                     value={message}
                     name='message'
                     onChange={handleInputChange}
-                    onBlur={handleMessageBlur}
+                    onBlur={handleBlur}
                     type='text'
                 />
                 <button className='submit-btn' type='button' onClick={handleFormSubmit}>Submit</button>
