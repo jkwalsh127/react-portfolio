@@ -1,5 +1,6 @@
 import React from "react";
 import './styles/Resume.css';
+import './styles/ResumeMediaQueries.css';
 import resume from './assets/Resume 2.0.pdf';
 
 export default function Resume() {

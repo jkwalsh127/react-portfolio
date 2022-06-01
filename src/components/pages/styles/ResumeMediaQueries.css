@@ -1,0 +1,36 @@
+@media screen and (max-width: 500px) {
+    .front-end-wrapper {
+        padding: 10px 20px 0 30px;
+    }
+    .back-end-wrapper {
+        padding: 10px 30px 0 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .front-end-wrapper {
+        padding: 10px 30px 0 30px;
+    }
+    .back-end-wrapper {
+        padding: 10px 30px 0 30px;
+    }
+    .resume {
+        font-size: 20px;
+    }
+    .resume-link {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .front-end-wrapper {
+        padding: 10px 0px 0 30px;
+    }
+    .back-end-wrapper {
+        padding: 10px 30px 0 0px;
+    }
+    .resume {
+        font-size: 18px;
+    }
+    .resume-link {
+        font-size: 18px;
+    }
+}
