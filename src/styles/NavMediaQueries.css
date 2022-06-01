@@ -82,3 +82,15 @@
         justify-content: flex-start;
     }
 }
+@media screen and (max-width: 400px) {
+    .nav {
+        margin: 0 0 0 100px;
+    }
+    .nav-items {
+        font-size: 13px;
+    }
+    .nav-items-active {
+        font-size: 13px;
+        padding: 10px 0 0 0;
+    }
+}

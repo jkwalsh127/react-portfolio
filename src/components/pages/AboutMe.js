@@ -1,5 +1,6 @@
 import React from "react";
 import './styles/AboutMe.css';
+import './styles/AboutMeMediaQueries.css';
 import portrait from './images/portrait.jpeg';
 
 export default function AboutMe() {

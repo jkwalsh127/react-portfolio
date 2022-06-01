@@ -1,0 +1,29 @@
+@media screen and (max-width: 850px) {
+    .about-me-wrap {
+        flex-direction: column-reverse;
+    }
+    .self-portrait {
+        margin: 120px 0 0 0;
+    }
+    .about-me {
+        margin: 20px 0 0 0;
+    }
+}
+@media screen and (max-width: 620px) {
+    .self-portrait {
+        margin: 150px 0 0 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-me-wrap p {
+        line-height: 130%;
+        font-size: 1.2em;
+        text-indent: 50px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 300px) {
+    .self-portrait {
+        width: 250px;
+    }
+}
