@@ -31,7 +31,7 @@ export default function Form() {
 
     const handleNameBlur = () => {
         if (!userName) {
-            setErrorNameMessage('Please include your name');
+            setErrorNameMessage('-- Please include your name --');
             return;
         }
         if (userName) {
@@ -40,21 +40,21 @@ export default function Form() {
         }
     }
     const handleEmailBlur = () => {
-        if (!userName) {
-            setErrorEmailMessage('Please enter a valid email');
+        if (!email || !validateEmail(email)) {
+            setErrorEmailMessage('-- Please enter a valid email --');
             return;
         }
-        if (userName) {
+        if (email) {
             setErrorEmailMessage('');
             return;
         }
     }
     const handleMessageBlur = () => {
-        if (!userName) {
-            setErrorMessageMessage('Please include a message');
+        if (!message) {
+            setErrorMessageMessage('-- Please include a message --');
             return;
         }
-        if (userName) {
+        if (message) {
             setErrorMessageMessage('');
             return;
         }
@@ -86,44 +86,60 @@ export default function Form() {
 
     return (
         <div className='form-wrapper'>
-            <h3>Send me a message</h3>
+            <h3 className='welcome-head'>
+                Thanks for visiting! I would be happy to hear from you.
+            </h3>
+            <h3 className='welcome-banner'>
+                Feel free to leave me or message or reach me through my email or socials
+            </h3>
+            {errorMessage && (
+                <div>
+                    <p className='error-message'>{errorMessage}</p>
+                </div>
+            )}
             <form className='message-form'>
                 <h4 className='field-label'>Your Name:</h4>
-                {errorNameMessage && (
-                <div>
-                    <p>{errorNameMessage}</p>
+                <div className='field-wrap'>
+                    <input
+                        className='field'
+                        value={userName}
+                        name='userName'
+                        onChange={handleInputChange}
+                        onBlur={handleNameBlur}
+                        type='text'
+                        placeholder='Your Name'
+                    />
+                    {errorNameMessage && (
+                    <div>
+                        <p className='error-message'>{errorNameMessage}</p>
+                    </div>
+                    )}
                 </div>
-                )}
-                <input
-                    className='field'
-                    value={userName}
-                    name='userName'
-                    onChange={handleInputChange}
-                    onBlur={handleNameBlur}
-                    type='text'
-                    placeholder='Your Name'
-                />
                 <h4 className='field-label'>Email address:</h4>
-                {errorEmailMessage && (
-                <div>
-                    <p>{errorEmailMessage}</p>
+                <div className='field-wrap'>
+                    <input
+                        className='field'
+                        value={email}
+                        name='email'
+                        onChange={handleInputChange}
+                        onBlur={handleEmailBlur}
+                        type='email'
+                        placeholder='Your Email'
+                    />
+                    {errorEmailMessage && (
+                    <div>
+                        <p className='error-message'>{errorEmailMessage}</p>
+                    </div>
+                    )}
                 </div>
-                )}
-                <input
-                    className='field'
-                    value={email}
-                    name='email'
-                    onChange={handleInputChange}
-                    onBlur={handleEmailBlur}
-                    type='email'
-                    placeholder='Your Email'
-                />
-                <h4 className='field-label'>Message:</h4>
-                {errorMessageMessage && (
-                <div>
-                    <p>{errorMessageMessage}</p>
+                <div className='field-wrap'>
+                    <h4 className='field-label'>Leave me a message:</h4>
+                    {errorMessageMessage && (
+                        <div>
+                            <p className='error-message-message'>{errorMessageMessage}</p>
+                        </div>
+                    )}
                 </div>
-                )}
                 <textarea
                     className='message-field field'
                     value={message}
@@ -134,11 +150,6 @@ export default function Form() {
                 />
                 <button className='submit-btn' type='button' onClick={handleFormSubmit}>Submit</button>
             </form>
-            {errorMessage && (
-                <div>
-                    <p>{errorMessage}</p>
-                </div>
-            )}
         </div>
     );
 }
