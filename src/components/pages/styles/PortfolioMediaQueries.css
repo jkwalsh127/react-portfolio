@@ -1,0 +1,31 @@
+@media screen and (max-width: 1150px) {
+    .my-work-header {
+        padding: 0 0 0 30px;
+    }
+    .work-group-label-container {
+        width: 15px;
+        min-width: 150px;
+    }
+    .work-label {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .work-group-label-container {
+        display: none;
+    }
+    .my-work-header {
+        margin-top: 120px;
+    }
+    .work-section-container {
+        justify-content: center;
+    }
+    .work-section-work-container {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 620px) {
+    .my-work-header {
+        margin-top: 160px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/Portfolio.css';
+import './styles/PortfolioMediaQueries.css';
 import Stoch from './cards/Stoch';
 import GitProductive from './cards/GitProductive';
 import SBS from './cards/SBS';
