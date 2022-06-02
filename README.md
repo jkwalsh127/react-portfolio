@@ -7,8 +7,7 @@ Hello! This repository is for the latest version of my portfolio page. By follow
 
 ---
 ## Description
-The latest update to my portfolio page was all about revamping it using the ReactJS library. All of my dependencies were through React, but the gh-pages development dependency was also used to test its deployment as it was being built. Utilizing the modularity of React, I created a Header, Nav, and Footer component to be used throughout the site, which is navigated through conditional rendering of different page components. Style sheets and images are also dispersed throughout the components and utilized selectively.
-
+The latest update to my portfolio page was all about revamping it using the ReactJS library. All of my dependencies were through React, but the gh-pages development dependency was also used to test its deployment as it was being built. Utilizing the modularity of React, I created a Header, Nav, and Footer component to be used throughout the site, which uses the React Router dependency to handle navigation throughout the site. Style sheets and images are also dispersed throughout the components and utilized selectively.
 ---
 ### Technologies
 | Languages  | Libraries |
