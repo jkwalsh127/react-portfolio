@@ -1,46 +1,31 @@
 import React from 'react';
-import '../styles/Nav.css';
-import '../styles/NavMediaQueries.css';
+import './styles/Nav.css';
+import './styles/NavMediaQueries.css';
+import { Link } from 'react-router-dom';
 
 export default function Nav({ currentPage, handlePageChange }) {
     return (
         <div className='nav'>
           <ul className='nav-tabs'>
-            <li>
-              <a
-                  href="#aboutme"
-                  onClick={() => handlePageChange('AboutMe')}
-                  className={currentPage === 'AboutMe' ? 'nav-items-active' : 'nav-items'}
-              >
+            <li className='nav-items'>
+              <Link to="/">
                   About Me
-              </a>
+              </Link>
             </li>
-            <li>
-              <a
-                  href="#portfolio"
-                  onClick={() => handlePageChange('Portfolio')}
-                  className={currentPage === 'Portfolio' ? 'nav-items-active' : 'nav-items'}
-              >
+            <li className='nav-items'>
+              <Link to="/portfolio">
                   Portfolio
-              </a>
+              </Link>
             </li>
-            <li>
-              <a
-                  href="#contact"
-                  onClick={() => handlePageChange('Contact')}
-                  className={currentPage === 'Contact' ? 'nav-items-active' : 'nav-items'}
-              >
+            <li className='nav-items'>
+              <Link to="/contact">
                   Contact
-              </a>
+              </Link>
             </li>
-            <li>
-              <a
-                  href="#resume"
-                  onClick={() => handlePageChange('Resume')}
-                  className={currentPage === 'Resume' ? 'nav-items-active' : 'nav-items'}
-              >
+            <li className='nav-items'>
+              <Link to="/resume">
                   Resume
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

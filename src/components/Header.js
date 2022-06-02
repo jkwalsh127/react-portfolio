@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Header.css';
-import '../styles/HeaderMediaQueries.css';
+import './styles/Header.css';
+import './styles/HeaderMediaQueries.css';
 import Nav from './Nav';
 
 export default function Header({ currentPage, handlePageChange }) {
