@@ -15,19 +15,19 @@ export default function PorftolioContainer() {
                 <Header />
                     <Routes>
                         <Route
-                            path="react-portfolio/"
+                            path="/react-portfolio/"
                             element={<AboutMe />}
                         />
                         <Route
-                            path="react-portfolio/portfolio"
+                            path="/react-portfolio/portfolio"
                             element={<Portfolio />}
                         />
                         <Route
-                            path="react-portfolio/resume"
+                            path="/react-portfolio/resume"
                             element={<Resume />}
                         />
                         <Route
-                            path="react-portfolio/contact"
+                            path="/react-portfolio/contact"
                             element={<Contact />}
                         />
                     </Routes>
