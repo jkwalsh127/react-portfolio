@@ -1,6 +1,7 @@
 import React from "react";
-import '../styles/WorkCard.css';
-import '../styles/WeatherDashboard.css';
+import './styles/WorkCard.css';
+import './styles/WorkCardMediaQueries.css';
+import './styles/WeatherDashboard.css';
 import weatherDashboard from '../images/weather-dashboard.png';
 
 export default function WeatherDashboard() {

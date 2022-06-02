@@ -1,6 +1,7 @@
 import React from "react";
-import '../styles/SBS.css';
-import '../styles/WorkCard.css';
+import './styles/SBS.css';
+import './styles/WorkCard.css';
+import './styles/WorkCardMediaQueries.css';
 import sbs from '../images/sbs.png';
 
 export default function SBS() {

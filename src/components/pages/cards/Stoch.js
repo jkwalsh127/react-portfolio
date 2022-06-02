@@ -1,7 +1,7 @@
 import React from "react";
-import '../styles/WorkCard.css';
-import '../styles/WorkCardMediaQueries.css';
-import '../styles/Stoch.css';
+import './styles/WorkCard.css';
+import './styles/WorkCardMediaQueries.css';
+import './styles/Stoch.css';
 import pineScript from '../images/pine-script.png';
 import tradingview from '../images/tradingview.png';
 

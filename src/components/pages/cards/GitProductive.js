@@ -1,6 +1,7 @@
 import React from "react";
-import '../styles/GitProductive.css';
-import '../styles/WorkCard.css';
+import './styles/GitProductive.css';
+import './styles/WorkCard.css';
+import './styles/WorkCardMediaQueries.css';
 import gitproTimer from '../images/gitpro-timer.gif';
 import handlebars from '../images/handlebars.png';
 
