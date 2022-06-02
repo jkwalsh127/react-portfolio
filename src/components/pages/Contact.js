@@ -38,7 +38,7 @@ export default function Form() {
         if (message) {
             setErrorMessageMessage('');
         }       
-        if (email) {
+        if (email && validateEmail(email)) {
             setErrorEmailMessage('');
         }
     }
@@ -64,7 +64,7 @@ export default function Form() {
         if (userName) {
             setErrorNameMessage('');
         }
-        if (email) {
+        if (email && validateEmail(email)) {
             setErrorEmailMessage('');
         }
     }
