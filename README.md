@@ -1,6 +1,5 @@
-# My Portfolio
-#### Made using ReactJS
-
+# My Portfolio #### Made using ReactJS
+---
 Hello! This repository is for the latest version of my portfolio page. By following the link below, you can learn a little bit about me, checkout some of my favorite coding projects that I've worked on, checkout my resume, and also find out how to get in touch with me. Please have a look!
 
  Visit the deployed site by clicking <a href="https://jkwalsh127.github.io/react-portfolio/#aboutme" target="_blank">**here**<a> 
