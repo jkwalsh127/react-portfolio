@@ -8,22 +8,22 @@ export default function Nav({ currentPage, handlePageChange }) {
         <div className='nav'>
           <ul className='nav-tabs'>
             <li className='nav-items'>
-              <Link to="/">
+              <Link to="react-portfolio/">
                   About Me
               </Link>
             </li>
             <li className='nav-items'>
-              <Link to="/portfolio">
+              <Link to="react-portfolio/portfolio">
                   Portfolio
               </Link>
             </li>
             <li className='nav-items'>
-              <Link to="/contact">
+              <Link to="react-portfolio/contact">
                   Contact
               </Link>
             </li>
             <li className='nav-items'>
-              <Link to="/resume">
+              <Link to="react-portfolio/resume">
                   Resume
               </Link>
             </li>

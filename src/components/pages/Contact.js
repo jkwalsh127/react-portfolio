@@ -9,7 +9,6 @@ export default function Form() {
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
     const [errorNameMessage, setErrorNameMessage] = useState('');
     const [errorEmailMessage, setErrorEmailMessage] = useState('');
     const [errorMessageMessage, setErrorMessageMessage] = useState('');
@@ -75,16 +74,8 @@ export default function Form() {
         e.preventDefault();
 
         // Validate email and check if userName field is empty
-        if (!userName) {
-            setErrorMessage('Please include your name');
-            return;
-        }
-        if (!validateEmail(email)) {
-            setErrorMessage('Please enter a valid email');
-            return;
-        }
-        if (!message) {
-            setErrorMessage('Please include a message to send');
+        if (!userName || !validateEmail(email) || !message) {
+            alert("There was a problem with your submission. Please try again");
             return;
         }
         alert(`Thank you ${userName}! Your message was received`);
@@ -102,11 +93,6 @@ export default function Form() {
             <h3 className='welcome-banner'>
                 Feel free to leave me or message or reach me through my email or socials
             </h3>
-            {errorMessage && (
-                <div>
-                    <p className='error-message'>{errorMessage}</p>
-                </div>
-            )}
             <form className='message-form'>
                 <h4 className='field-label'>Your Name:</h4>
                 <div className='field-wrap'>
