@@ -15,8 +15,8 @@ Visit the deployed site by clicking <a href="https://jkwalsh127.github.io/react-
 ## Description
 The latest update to my portfolio page was all about revamping it using the ReactJS library. All of my dependencies were through React, but the gh-pages development dependency was also used to test its deployment as it was being built. Utilizing the modularity of React, I created a Header, Nav, and Footer component to be used throughout the site, which uses the React Router dependency to handle navigation throughout the site. Style sheets and images are also dispersed throughout the components and utilized selectively.
  
-<img src="https://user-images.githubusercontent.com/101354032/171527382-21d31c61-cb3b-437d-b56b-0f5721b05e71.mp4">
- 
+![Untitled_ Jun 14, 2022 9_19 PM](https://user-images.githubusercontent.com/101354032/173736200-74e1cd73-1326-4622-ac07-b22092c35aaf.gif)
+
 ---
  
 #### Credits
