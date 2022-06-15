@@ -1,7 +1,6 @@
 # My Portfolio 
 ### Made using ReactJS
 
-### Technologies
 | Languages  | Libraries |
 | ---------  | --------- |
 | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) | ![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) |
